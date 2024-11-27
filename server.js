@@ -10,7 +10,18 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Route to handle the home page
 app.get("/", (req, res) => {
-  res.send("Hello There, from Express Server");
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+// Route to handle the about page
+app.get("/about", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "about.html"));
+});
+
+// Serve 404 page for any other route, basically route to handle the 404 page
+app.get("*", (req, res) => {
+  console.log("404 route triggered");
+  res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
 });
 
 // Starts the server
