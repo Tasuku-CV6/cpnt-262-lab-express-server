@@ -1,0 +1,132 @@
+/* public/styles.css */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f9; /* Light neutral background (subtle, soft, easy on the eyes) */
+  color: #333; /* Dark text color for good contrast */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2b8eff; /* Blue Archive blue (main theme color) */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5em;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+nav a {
+  color: #ff8c00; /* Soft yellow-orange (highlight accent) */
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro,
+.featured {
+  margin-bottom: 40px;
+}
+
+.intro h2,
+.featured h2 {
+  color: #7fc6ff; /* Light Blue (subtle highlight) */
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.character-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.character-card {
+  background-color: #fff; /* Clean white card for a bright, modern feel */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-10px); /* Slight lift effect for interactivity */
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.character-card h3 {
+  margin-top: 10px;
+  color: #333; /* Dark color for text contrast */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.character-card p {
+  font-size: 0.9em;
+  color: #666; /* Lighter text color for descriptions */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff8c00; /* Bright highlight color for buttons */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e77f00; /* Slightly darker orange on hover for effect */
+}
+
+footer {
+  background-color: #333; /* Dark footer for contrast */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.intro h2 {
+  color: #7fc6ff; /* Light blue, slightly muted for headers */
+}
+
+footer {
+  background-color: #1d61a0; /* Dark blue background for footer */
+}
+
+button:focus {
+  outline: none; /* Removes focus outline for button */
+}
